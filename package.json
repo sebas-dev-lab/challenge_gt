@@ -1,0 +1,21 @@
+{
+  "name": "getterapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-server": "npm install --prefix gt_api",
+    "install-client": "npm install --force --prefix gt_cli", 
+    "server": "npm run start:local --prefix gt_api",
+    "client": "npm run start:local --prefix gt_cli",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev:install": "concurrently \"npm run install-server\" \"npm run install-client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
