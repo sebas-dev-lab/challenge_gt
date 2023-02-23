@@ -1,6 +1,7 @@
 /node_modules
 /gt_api/node_modules
 /gt_cli/node_modules
+/gt_cli/logs
 
 npm-debug.log*
 yarn-debug.log*
