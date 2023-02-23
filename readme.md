@@ -16,7 +16,6 @@
 
 - Si se ejecuta este último método al terminar los procesos en Poweshell de Windows se debería ejeuctar:
      ```netstat -ano | findstr :PORT``` 
-     API_PORT=4000, CLI_PORT=3000
       ``taskkill /PID 'PID' /F``
 
 ## CLIENT
@@ -26,7 +25,7 @@
 
 ### BASE
 
-- Puerto default: 3000
+- Puerto por defecto: 3000
 - Login - Registro de nuevo usuario - Logout
 - Crear - Editar - Eliminar - Obtener tareas (CRUD)
 - Pages auth - auth/register - / - /tasks
