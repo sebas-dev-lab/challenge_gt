@@ -6,7 +6,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/logs
+/gt_api/logs
 /.vscode
 
 package-*.json
