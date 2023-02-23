@@ -65,7 +65,11 @@ export default function Auth() {
               required
               fullWidth
               id="email"
-              label="Username  - Demo: test1"
+              label={
+                set_register()
+                  ? "Nombre de usuario"
+                  : "Usuario - Ingresar - Demo: test1"
+              }
               name="email"
               autoComplete="email"
               autoFocus
@@ -75,7 +79,7 @@ export default function Auth() {
               required
               fullWidth
               name="password"
-              label="Password - Demo: test123*"
+              label={set_register() ? "Password" : "Password - Demo: test123*"}
               type="password"
               id="password"
               autoComplete="current-password"

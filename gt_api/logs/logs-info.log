@@ -595,3 +595,21 @@
 2023-02-22 21:57:55:5755 error: Error
 2023-02-22 21:58:39:5839 error: Error
 2023-02-22 21:58:39:5839 error: Error
+2023-02-22 22:52:37:5237 info: Auth context id: 395f947a-de1e-4201-b739-21b4eaccd09e
+2023-02-22 22:52:37:5237 info: Common contexts: connection.context
+2023-02-22 22:52:37:5237 info: Common contexts: task.context
+2023-02-22 22:52:37:5237 info: HTTP & WS connection.
+2023-02-22 22:52:37:5237 info: Server on port: 4000
+2023-02-22 22:52:40:5240 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-22 22:58:17:5817 info: Auth context id: c94a5211-c604-453c-a46d-1c0e9e4cbc3f
+2023-02-22 22:58:17:5817 info: Common contexts: connection.context
+2023-02-22 22:58:17:5817 info: Common contexts: task.context
+2023-02-22 22:58:17:5817 info: HTTP & WS connection.
+2023-02-22 22:58:17:5817 info: Server on port: 4000
+2023-02-22 22:58:19:5819 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-22 22:58:53:5853 info: Auth context id: 6ca1393e-e659-485f-b4d9-617c79122186
+2023-02-22 22:58:53:5853 info: Common contexts: connection.context
+2023-02-22 22:58:53:5853 info: Common contexts: task.context
+2023-02-22 22:58:53:5853 info: HTTP & WS connection.
+2023-02-22 22:58:53:5853 info: Server on port: 4000
+2023-02-22 22:58:55:5855 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view

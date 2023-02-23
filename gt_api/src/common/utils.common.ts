@@ -87,6 +87,7 @@ export const setTaskIntoContext = async () => {
         const url = 'https://jsonplaceholder.typicode.com/todos';
         const { data } = await axios.get(url);
         const key = Object.keys(commonContext[contexts.task].get_all_store())[0];
+        let idx = 0;
         for (const d of data) {
             const id = uuidv4();
             const newTask: taskSubscription = {
@@ -102,6 +103,10 @@ export const setTaskIntoContext = async () => {
                     ? [newTask]
                     : commonContext[contexts.task].get_store_by_key(key).concat([newTask])
             });
+            if (idx === 10) {
+                break;
+            }
+            idx++;
         }
     } catch (e: any) {
         Logger.error(e);
