@@ -31,9 +31,13 @@ const Form = () => {
     }
     if (tasks.edit) {
       dispatch(
-        editItem(tasks.id, {
-          title: tasks.title,
-        })
+        editItem(
+          tasks.id,
+          {
+            title: tasks.title,
+          },
+          `page=${tasks.page}&limit=${tasks.limit}`
+        )
       );
       dispatch(setEdit());
     } else {
@@ -62,9 +66,14 @@ const Form = () => {
           />
         </Grid>
         <Grid item md={2}>
-          <Button variant="outlined" style={{
-            marginTop: "2px"
-          }} color="primary" onClick={handleClick}>
+          <Button
+            variant="outlined"
+            style={{
+              marginTop: "2px",
+            }}
+            color="primary"
+            onClick={handleClick}
+          >
             {tasks.edit ? "Editar" : "Agregar"}
           </Button>
         </Grid>

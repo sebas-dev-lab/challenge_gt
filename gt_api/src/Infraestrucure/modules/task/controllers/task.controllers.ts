@@ -63,8 +63,8 @@ export class TaskControllers {
         }
         const query = req.query;
         const pagination: pagination = {
-            page: query.page && typeof query.page === 'number' ? query.page : 1,
-            limit: query.limit && typeof query.limit === 'number' ? query.limit : 10
+            page: query.page ? Number(query.page) : 1,
+            limit: query.limit ? Number(query.limit) : 10
         };
 
         const find = this._taskServices.find_all_tasks(user_id, pagination);

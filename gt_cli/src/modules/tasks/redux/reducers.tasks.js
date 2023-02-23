@@ -5,6 +5,9 @@ const initialState = {
   title: "",
   completed: false,
   id: "",
+  pages: 1,
+  limit: 5,
+  page: 1,
   edit: false,
   error: "",
 };
@@ -16,6 +19,17 @@ const taskReducers = (state = initialState, action = {}) => {
         ...state,
         edit: !state.edit,
       };
+    case actionTypes.SET_LIMIT:
+      return {
+        ...state,
+        limit: action.payload.limit,
+      };
+    case actionTypes.SET_PAG:
+      return {
+        ...state,
+        page: action.payload.page,
+        limit: action.payload.limit,
+      };
     case actionTypes.SET_TITLE:
       return {
         ...state,
@@ -25,8 +39,13 @@ const taskReducers = (state = initialState, action = {}) => {
     case actionTypes.GET_ITEMS:
       return {
         ...state,
-        items: action.payload.sort(function (a, b) {
+        items: action.payload.items.sort(function (a, b) {
           return a.completed === b.completed ? 0 : a.completed ? 1 : -1;
+        }),
+        pages: action.payload.meta.pages,
+        page: action.payload.meta.page,
+        ...(action.payload.meta.limit && {
+          limit: action.payload.meta.limit,
         }),
       };
     case actionTypes.SET_ERROR:

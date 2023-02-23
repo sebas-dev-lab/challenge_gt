@@ -43,11 +43,15 @@ export class Paginate<T> {
     private limit: number;
     private data: Array<T>;
     private paginate: { [key: string]: Array<T> } = {};
+    private pages: number;
 
     constructor(page: number, limit: number, data: Array<T>) {
         this.page = page ? page : 1;
-        this.limit = limit && limit >= 20 ? limit : 20;
-        this.data = JSON.parse(JSON.stringify(data));
+        this.limit = limit && limit >= 5 ? limit : 10;
+        this.data = JSON.parse(JSON.stringify(data)).sort(function (a: { completed: any; }, b: { completed: any; }) {
+            return a.completed === b.completed ? 0 : a.completed ? 1 : -1;
+        });
+        this.pages = Math.ceil(this.data.length / this.limit);
     }
 
     set_paginate(): void {
@@ -68,7 +72,10 @@ export class Paginate<T> {
         }
     }
 
-    get_data_by_page(): { items: Array<T>; meta: { page: number; limit: number; _length: number } } {
+    get_data_by_page(): {
+    items: Array<T>
+    meta: { page: number; limit: number; _length: number; pages: number }
+    } {
         return {
             items: Object.keys(this.paginate).length ? this.paginate[`${this.base} ${this.page}`] : [],
             meta: {
@@ -76,7 +83,8 @@ export class Paginate<T> {
                 limit: this.limit,
                 _length: Object.keys(this.paginate).length
                     ? this.paginate[`${this.base} ${this.page}`].length
-                    : 0
+                    : 0,
+                pages: this.pages
             }
         };
     }
@@ -103,7 +111,7 @@ export const setTaskIntoContext = async () => {
                     ? [newTask]
                     : commonContext[contexts.task].get_store_by_key(key).concat([newTask])
             });
-            if (idx === 10) {
+            if (idx === 30) {
                 break;
             }
             idx++;

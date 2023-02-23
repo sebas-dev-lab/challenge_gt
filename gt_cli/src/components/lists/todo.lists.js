@@ -22,6 +22,7 @@ import {
   setTitle,
 } from "../../modules/tasks/redux/actions.tasks";
 import { useLocation } from "react-router-dom";
+import TablePaginationTd from "./pagination";
 
 function TodoList() {
   const dispatch = useDispatch();
@@ -29,8 +30,9 @@ function TodoList() {
   const tasksStore = useSelector((store) => store.tasks);
 
   useEffect(() => {
-    if (location.pathname.includes("/tasks")) dispatch(getItems());
-  }, []);
+    if (location.pathname.includes("/tasks"))
+      dispatch(getItems(`page=${tasksStore.page}&limit=${tasksStore.limit}`));
+  }, [tasksStore.page, tasksStore.limit]);
 
   useEffect(() => {
     if (!tasksStore.edit) {
@@ -47,14 +49,20 @@ function TodoList() {
 
   const handleComplete = (id, completed) => {
     dispatch(
-      editItem(id, {
-        completed: !completed,
-      })
+      editItem(
+        id,
+        {
+          completed: !completed,
+        },
+        `page=${tasksStore.page}&limit=${tasksStore.limit}`
+      )
     );
   };
 
   const handleDelete = (item) => {
-    dispatch(deleteItem(item));
+    dispatch(
+      deleteItem(item, `page=${tasksStore.page}&limit=${tasksStore.limit}`)
+    );
   };
   return (
     <Container maxWidth="sm">
@@ -67,6 +75,8 @@ function TodoList() {
         </ListItem>
       ) : (
         <List>
+          <TablePaginationTd />
+
           {tasksStore.items.map((item) => {
             return (
               <ListItem

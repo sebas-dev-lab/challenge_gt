@@ -619,3 +619,90 @@
 2023-02-22 23:05:02:52 info: HTTP & WS connection.
 2023-02-22 23:05:02:52 info: Server on port: 4000
 2023-02-22 23:05:04:54 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-22 23:27:34:2734 info: Auth context id: ab57c516-757b-471d-99cb-2c665ab7fbf0
+2023-02-22 23:27:34:2734 info: Common contexts: connection.context
+2023-02-22 23:27:34:2734 info: Common contexts: task.context
+2023-02-22 23:27:34:2734 info: HTTP & WS connection.
+2023-02-22 23:27:34:2734 info: Server on port: 4000
+2023-02-22 23:27:37:2737 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-22 23:32:21:3221 info: Auth context id: 2c132fce-3b96-4a45-b460-f137ea235724
+2023-02-22 23:32:21:3221 info: Common contexts: connection.context
+2023-02-22 23:32:21:3221 info: Common contexts: task.context
+2023-02-22 23:32:21:3221 info: HTTP & WS connection.
+2023-02-22 23:32:21:3221 info: Server on port: 4000
+2023-02-22 23:32:23:3223 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-22 23:33:34:3334 info: Auth context id: 6a43d6f9-c396-48a8-b230-bf18f882f9c9
+2023-02-22 23:33:34:3334 info: Common contexts: connection.context
+2023-02-22 23:33:34:3334 info: Common contexts: task.context
+2023-02-22 23:33:34:3334 info: HTTP & WS connection.
+2023-02-22 23:33:34:3334 info: Server on port: 4000
+2023-02-22 23:33:36:3336 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-22 23:34:24:3424 error: Error
+2023-02-22 23:34:24:3424 error: Error
+2023-02-22 23:34:36:3436 error: Error
+2023-02-22 23:34:38:3438 error: Error
+2023-02-22 23:34:38:3438 error: Error
+2023-02-22 23:51:05:515 info: Auth context id: b52005b2-8339-495a-979a-dc650498aa9b
+2023-02-22 23:51:05:515 info: Common contexts: connection.context
+2023-02-22 23:51:05:515 info: Common contexts: task.context
+2023-02-22 23:51:05:515 info: HTTP & WS connection.
+2023-02-22 23:51:05:515 info: Server on port: 4000
+2023-02-22 23:51:08:518 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-22 23:53:35:5335 info: Auth context id: 31ccfdc4-9a98-4bbe-b541-d642b9862c8f
+2023-02-22 23:53:35:5335 info: Common contexts: connection.context
+2023-02-22 23:53:35:5335 info: Common contexts: task.context
+2023-02-22 23:53:35:5335 info: HTTP & WS connection.
+2023-02-22 23:53:35:5335 info: Server on port: 4000
+2023-02-22 23:53:37:5337 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-22 23:54:52:5452 info: Auth context id: 40157564-d465-4d8a-a8d9-bab39b24cc79
+2023-02-22 23:54:52:5452 info: Common contexts: connection.context
+2023-02-22 23:54:52:5452 info: Common contexts: task.context
+2023-02-22 23:54:52:5452 info: HTTP & WS connection.
+2023-02-22 23:54:52:5452 info: Server on port: 4000
+2023-02-22 23:54:54:5454 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-22 23:57:32:5732 info: Auth context id: bfc4fd07-2596-4299-a84b-99a8108b3543
+2023-02-22 23:57:32:5732 info: Common contexts: connection.context
+2023-02-22 23:57:32:5732 info: Common contexts: task.context
+2023-02-22 23:57:32:5732 info: HTTP & WS connection.
+2023-02-22 23:57:32:5732 info: Server on port: 4000
+2023-02-22 23:57:34:5734 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-22 23:58:55:5855 info: Auth context id: 819f9a0b-4952-436d-9c77-a798fe5838c2
+2023-02-22 23:58:55:5855 info: Common contexts: connection.context
+2023-02-22 23:58:55:5855 info: Common contexts: task.context
+2023-02-22 23:58:55:5855 info: HTTP & WS connection.
+2023-02-22 23:58:55:5855 info: Server on port: 4000
+2023-02-22 23:58:57:5857 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-22 23:59:19:5919 info: Auth context id: c8a2a22f-3f11-43bb-9f71-317220a23d2e
+2023-02-22 23:59:19:5919 info: Common contexts: connection.context
+2023-02-22 23:59:19:5919 info: Common contexts: task.context
+2023-02-22 23:59:19:5919 info: HTTP & WS connection.
+2023-02-22 23:59:19:5919 info: Server on port: 4000
+2023-02-22 23:59:21:5921 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-23 00:00:17:017 info: Auth context id: 05c48df2-d846-4b5c-adb1-b60c49e8f4df
+2023-02-23 00:00:17:017 info: Common contexts: connection.context
+2023-02-23 00:00:17:017 info: Common contexts: task.context
+2023-02-23 00:00:17:017 info: HTTP & WS connection.
+2023-02-23 00:00:17:017 info: Server on port: 4000
+2023-02-23 00:00:19:019 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-23 00:00:52:052 info: Auth context id: f6859360-3905-4933-93f0-7f551752bb44
+2023-02-23 00:00:52:052 info: Common contexts: connection.context
+2023-02-23 00:00:52:052 info: Common contexts: task.context
+2023-02-23 00:00:52:052 info: HTTP & WS connection.
+2023-02-23 00:00:52:052 info: Server on port: 4000
+2023-02-23 00:00:54:054 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-23 00:02:11:211 info: Auth context id: 473eab47-1459-4997-a42f-df7fcc850e71
+2023-02-23 00:02:11:211 info: Common contexts: connection.context
+2023-02-23 00:02:11:211 info: Common contexts: task.context
+2023-02-23 00:02:11:211 info: HTTP & WS connection.
+2023-02-23 00:02:11:211 info: Server on port: 4000
+2023-02-23 00:02:13:213 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-23 01:25:31:2531 info: Auth context id: 9e8f1c4e-d2c0-4626-8b9c-b13e6728e763
+2023-02-23 01:25:31:2531 info: Common contexts: connection.context
+2023-02-23 01:25:31:2531 info: Common contexts: task.context
+2023-02-23 01:25:31:2531 info: HTTP & WS connection.
+2023-02-23 01:25:31:2531 info: Server on port: 4000
+2023-02-23 01:25:32:2532 error: Error
+2023-02-23 01:25:32:2532 error: Error
+2023-02-23 01:25:33:2533 info: Testing completed. You can see the report in: http://localhost:4000/api/test_view
+2023-02-23 01:25:45:2545 error: Error
+2023-02-23 01:25:45:2545 error: Error

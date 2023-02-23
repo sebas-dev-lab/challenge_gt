@@ -19,7 +19,7 @@ export class TaskRepository implements TasksCasesInterface {
             commonContext[contexts.task].set_store({
                 [user_id]: !commonContext[contexts.task].get_store_by_key(user_id)
                     ? [newTask]
-                    : commonContext[contexts.task].get_store_by_key(user_id).concat([newTask])
+                    : [newTask].concat(commonContext[contexts.task].get_store_by_key(user_id))
             });
             return { id };
         } catch (e: any) {
