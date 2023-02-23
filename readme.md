@@ -4,7 +4,9 @@
     
 - Instalar en cada proyecto (api - cli) de forma individual: ``npm install`` dentro de cada carpeta
 
-- Instalar de forma concurrente desde raiz del proyecto general: ``npm run dev:install`` 
+- Instalar de forma concurrente desde raiz del proyecto general: 
+    - ``npm install`` 
+    - ``npm run dev:install`` 
 
 
 > **Ejecutar**
@@ -16,7 +18,6 @@
 
 - Si se ejecuta este último método al terminar los procesos en Poweshell de Windows se debería ejeuctar:
      ```netstat -ano | findstr :PORT``` 
-     API_PORT=4000, CLI_PORT=3000
       ``taskkill /PID 'PID' /F``
 
 ## CLIENT
@@ -26,7 +27,7 @@
 
 ### BASE
 
-- Puerto default: 3000
+- Puerto por defecto: 3000
 - Login - Registro de nuevo usuario - Logout
 - Crear - Editar - Eliminar - Obtener tareas (CRUD)
 - Pages auth - auth/register - / - /tasks
@@ -70,7 +71,7 @@
         - Al realizar login, recibe un token que debe pasar por header en rutas protegidas(Basic auth) "Authorizarion: Bearer -token-" para http y "token: -token-" para ws. El login es registrado y almacenado en el contexto junto con la información otorgada. En el response se envía un token y un id_event, el cual debería ser utilizado en WS y pasarlo por header como id_event.
         - En este caso cuando el usuario se conecte a WS, esta es registrada y almacenada en el contexto de "private WS Connection" en "common context", utilizando el id_event como id único de conexión, a la vez que se otorga un id de conexión, de tal forma que, si el mismo usuario realiza una conexión paralela, cada una podrá almacenar procesos de suscripcion individuales identificadas por id de conexión y dentro del mismo registro de conexión a WS inicial por id_event. Si este es incorrecto, entonces la conexión no es factible.
         - Se puede simular el proceso de CRUD del TODO LIST guardando los mismos en memoria dentro del contexto.
-        - El procesos de logout simplemente elimina la sesión del usuario, de forma que no se podrá volver a acceder sin antes hacer login. Se se da este último nuevamente, se comprueba que los registros se mantienen en memoria.
+        - El procesos de logout simplemente elimina la sesión del usuario, de forma que no se podrá volver a acceder sin antes hacer login. Si se da este último nuevamente, se comprueba que los registros se mantienen en memoria.
         
     - La información almacenada en memoria no tiene persistencia y se elimina cada vez que se reinicia el servicio.
 
