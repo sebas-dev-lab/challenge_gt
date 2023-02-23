@@ -4,7 +4,9 @@
     
 - Instalar en cada proyecto (api - cli) de forma individual: ``npm install`` dentro de cada carpeta
 
-- Instalar de forma concurrente desde raiz del proyecto general: ``npm run dev:install`` 
+- Instalar de forma concurrente desde raiz del proyecto general: 
+    - ``npm install`` 
+    - ``npm run dev:install`` 
 
 
 > **Ejecutar**
