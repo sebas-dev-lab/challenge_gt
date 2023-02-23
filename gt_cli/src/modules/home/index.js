@@ -13,9 +13,18 @@ function Welcome() {
       <p>
         Las tareas obtenidas desde https://jsonplaceholder.typicode.com/todos,
         es agregado al contexto del usuario demo creado durante el test de API
-        al iniciar la misma. 
+        al iniciar la misma.
       </p>
-      <p>Puede agregar nuevos usuarios y cada uno trabaja dentro del contexto de la API correspondiente. Vea mas en ...</p>
+      <p>
+        Puede agregar nuevos usuarios y cada uno trabaja dentro del contexto de
+        la API correspondiente. Vea mas en
+      </p>
+      <a
+        href="https://github.com/sebas-dev-lab/challenge_gt/blob/master/gt_api/readme.md"
+        target="_blank"
+      >
+        Readme API
+      </a>
       <p>Documentación de API al siguiente link</p>
       <h4>Consideraciones previas</h4>
       <p>Instalar NodeJs</p>
